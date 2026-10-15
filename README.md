@@ -80,25 +80,3 @@ La consigna aclara que importa *el rol de cada pieza, no la marca*. Airtable cum
 
 ---
 
-## ▶️ Cómo importar
-
-1. En n8n: **Import from File** → `checkpoint4_joselin_pereira.json`.
-2. Configurar credenciales: Anthropic, Airtable (memoria y CRM), Google Sheets, Gmail OAuth2 (casilla de soporte) y Slack OAuth2.
-3. Reemplazar la casilla de soporte en el filtro del Gmail Trigger y en la condición de remitente propio del IF.
-4. Seleccionar los Workers en los nodos *Delegar a Worker* (sub-workflows del M2).
-
-> El archivo exportado no contiene API keys ni tokens: las credenciales se configuran en cada instancia de n8n.
-
----
-
-## 🗺️ Hoja de ruta
-
-| Módulo | Evolución del agente | Estado |
-|---|---|---|
-| M1 | Agente base: Trigger + AI Agent + System Prompt + Tool + Observabilidad | ✅ |
-| M2 | Arquitectura multi-agente: Manager + Workers como sub-workflows | ✅ |
-| M3 | Memoria persistente en Airtable por Session_ID y resumen agéntico | ✅ |
-| M4 | Integraciones OAuth2: CRM, Gmail y Slack con controles preventivos | ✅ Entregado |
-| M5 | RAG: base documental y vector store (LlamaCloud) | ⏳ |
-| M6 | Voz: STT / TTS | ⏳ |
-| M11 | Proyecto Final Integrador | ⏳ |
